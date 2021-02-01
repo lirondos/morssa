@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
 	already_seen = pd.read_csv(already_seen_path, error_bad_lines=False)
 
-	out = param["out"]
+
 
 	if not os.path.exists(out):
 		os.makedirs(out)
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 								"date": dateparser.parse(date).strftime("%A, %d %B %Y"),
 								"source": source,
 								"category": category}
-					with open(output_file , 'a', encoding = "utf-8") as json_file, open(param["already_seen"], mode='a', newline='', encoding = "utf-8") as csv_file:
+					with open(output_file , 'a', encoding = "utf-8") as json_file, open(already_seen_path, mode='a', newline='', encoding = "utf-8") as csv_file:
 						file_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						json.dump(item, json_file)
 						json_file.write('\n')
