@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
 	just_seen = set() # este set sirve para controlar que noticias ya han sido añadidas
 
-	with open(param["urls_file"]) as csv_file:
+	with open(root/param["urls_file"]) as csv_file:
 		csv_reader = csv.reader(csv_file, delimiter=',')
 		for row in csv_reader:
 			time.sleep(5)
