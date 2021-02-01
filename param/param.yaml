@@ -1,0 +1,3 @@
+urls_file: param/urls.csv
+out:  out
+already_seen:  param/already_seen.csv
