@@ -15,6 +15,7 @@ import pandas as pd
 import yaml
 from pathlib import Path
 import argparse
+import time
 
 
 parser = argparse.ArgumentParser()
@@ -22,11 +23,6 @@ parser.add_argument('param', type=str, help='Path to file with params')
 parser.add_argument('root', type=str, help='Path to current directory')
 
 
-
-def getxml(url):
-	response = requests.get(url)
-	data = xmltodict.parse(response.content)
-	return data
 
 def get_text_date(url):
 	try:
@@ -78,10 +74,16 @@ if __name__ == "__main__":
 	with open(param["urls_file"]) as csv_file:
 		csv_reader = csv.reader(csv_file, delimiter=',')
 		for row in csv_reader:
+			time.sleep(5)
 			rss_url = row[0]
 			source = row[1]
 			category = row[2]
-			feed = feedparser.parse(rss_url)
+			try:
+				feed = feedparser.parse(rss_url)
+			except Exception as e:
+				print(e)
+				print(rss_url)
+				continue
 			print(rss_url)
 			for j in feed["entries"]:
 				if not "links" in j:
