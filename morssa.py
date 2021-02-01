@@ -63,8 +63,7 @@ if __name__ == "__main__":
 
 	already_seen = pd.read_csv(already_seen_path, error_bad_lines=False)
 
-
-
+	out = param["out"]
 	if not os.path.exists(out):
 		os.makedirs(out)
 
