@@ -1,35 +1,35 @@
-beautifulsoup4 @ file:///home/conda/feedstock_root/build_artifacts/beautifulsoup4_1601745390275/work
+beautifulsoup4
 brotlipy==0.7.0
 certifi==2020.12.5
-cffi @ file:///D:/bld/cffi_1606601414542/work
-chardet @ file:///D:/bld/chardet_1610093614045/work
-cryptography @ file:///D:/bld/cryptography_1610338903728/work
+cffi
+chardet
+cryptography
 cssselect==1.1.0
 feedfinder2==0.0.4
-feedparser @ file:///home/conda/feedstock_root/build_artifacts/feedparser_1603659039470/work
+feedparser
 furl==2.1.0
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
-jieba3k @ file:///D:/bld/jieba3k_1602418976656/work
-lxml @ file:///D:/bld/lxml_1610146668552/work
-newspaper3k @ file:///D:/bld/newspaper3k_1602639985070/work
+idna
+jieba3k
+lxml
+newspaper3k
 nltk==3.4.4
-numpy @ file:///D:/bld/numpy_1603047746511/work
-olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1602866521163/work
+numpy
+olefile
 orderedmultidict==1.0.1
-pandas @ file:///D:/bld/pandas_1607423921518/work
-Pillow @ file:///D:/bld/pillow_1610407611014/work
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
-pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1608055815057/work
-PySocks @ file:///D:/bld/pysocks_1610291695773/work
+pandas
+Pillow
+pycparser
+pyOpenSSL
+PySocks
 python-dateutil==2.8.1
-pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1608904108784/work
+pytz
 PyYAML==5.4.1
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1608156231189/work
-requests-file @ file:///home/conda/feedstock_root/build_artifacts/requests-file_1591227832914/work
-sgmllib3k @ file:///home/conda/feedstock_root/build_artifacts/sgmllib3k_1600021450347/work
-six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
-soupsieve @ file:///home/conda/feedstock_root/build_artifacts/soupsieve_1597680516047/work
+requests
+requests-file
+sgmllib3k
+six
+soupsieve
 tldextract==2.2.0
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1611695416663/work
-win-inet-pton @ file:///D:/bld/win_inet_pton_1610147511403/work
+urllib3
+win-inet-pton
 wincertstore==0.2
